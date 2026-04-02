@@ -13,6 +13,7 @@ This repository is the architecture core of my PKI portfolio.
 - Website and demos: https://salva-navarro.github.io
 - Spanish architecture companion: https://github.com/salva-navarro/arquitectura-pki-empresarial
 - Tooling index: https://github.com/salva-navarro/Tools-Hub
+- Brand kit: https://salva-navarro.github.io/brand-kit/
 
 The goal is practical: move from abstract guidance to implementation-ready design decisions.
 
