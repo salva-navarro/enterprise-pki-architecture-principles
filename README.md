@@ -16,6 +16,12 @@ This repository is the architecture core of my PKI portfolio.
 
 The goal is practical: move from abstract guidance to implementation-ready design decisions.
 
+## Extended Sections
+
+- Operating model: [docs/operating-model.md](docs/operating-model.md)
+- Common anti-patterns: [docs/anti-patterns.md](docs/anti-patterns.md)
+- 180-day evolution roadmap: [docs/roadmap-180-days.md](docs/roadmap-180-days.md)
+
 ---
 
 ## Executive Summary
