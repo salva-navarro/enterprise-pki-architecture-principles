@@ -1,92 +1,57 @@
-﻿# Brand Identity Reference â€” Salva Navarro / PKI Tools
+﻿# Brand Identity - Salva Navarro
 
-> This file is the authoritative brand reference for this repository.
-> Use these tokens, URLs and guidelines in any UI, document, or deliverable created here.
+**Kit de marca corporativa para todos los proyectos PKI Tools / SnPKI IdentiCert Suite.**
 
-## Brand Kit (CDN)
+---
 
-**Reference page:** https://salva-navarro.github.io/brand-kit/
-**Full asset pack download:** https://salva-navarro.github.io/brand-kit/PKI_Tools_SuperPack_AI_v2.zip
+## Archivos Canonicos (Fuente de Verdad)
 
-## Color Tokens
+| Archivo | URL | Uso |
+|---------|-----|-----|
+| **brand-tokens.css** | https://salva-navarro.github.io/brand-kit/brand-tokens.css | CSS custom properties - importar en cualquier stylesheet |
+| **brand-tokens.json** | https://salva-navarro.github.io/brand-kit/brand-tokens.json | Design tokens completos - para IA, tooling, Figma plugins |
+| **Visual reference** | https://salva-navarro.github.io/brand-kit/ | Pagina de referencia visual |
+| **Asset pack** | https://salva-navarro.github.io/brand-kit/PKI_Tools_SuperPack_AI_v2.zip | 393 assets: logos, iconos, patrones |
 
-| Token | Value | Use |
-|---|---|---|
-| `--brand-primary` | `#2F4F9F` | Main blue â€” headers, buttons, links |
-| `--brand-primary-tint` | `#4B70C9` | Hover states, secondary actions |
-| `--brand-primary-shade` | `#1E3470` | Pressed states, dark headers |
-| `--brand-secondary` | `#D4A017` | Gold accent â€” highlights, badges |
-| `--brand-secondary-tint` | `#E8BC45` | Light gold, hover accents |
-| `--brand-secondary-shade` | `#A07C10` | Dark gold, pressed accents |
-| `--brand-dark` | `#1C1C1C` | Body text, dark backgrounds |
-| `--brand-light` | `#FFFFFF` | Backgrounds, cards |
+---
 
-### CSS Usage
+## Instruccion para IA (Copilot / ChatGPT / Cursor)
 
-```css
-@import url('https://salva-navarro.github.io/brand-kit/02_COLOR_PALETTES/palette_01_primary.json');
+Pega esto en cualquier prompt para que la IA use exactamente esta marca:
 
-:root {
-  --brand-primary:   #2F4F9F;
-  --brand-secondary: #D4A017;
-  --brand-dark:      #1C1C1C;
-  --brand-light:     #FFFFFF;
-}
-```
+\\\`nUsa los design tokens de la marca Salva Navarro desde:
+  CSS:  https://salva-navarro.github.io/brand-kit/brand-tokens.css
+  JSON: https://salva-navarro.github.io/brand-kit/brand-tokens.json
 
-## Typography
+Siempre importa brand-tokens.css y usa var(--color-primary), var(--gradient-hero), etc.
+Nunca uses valores hex directamente. Tipografia: Montserrat (titulares) + Inter (cuerpo).
+\\\`n
+---
 
-| Role | Font | Weight |
-|---|---|---|
-| Headings | Montserrat | 600â€“700 |
-| Body | Inter | 400â€“500 |
-| Monospace / Code | Consolas | 400 |
+## Importar en un proyecto
 
-```html
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-```
+\\\css
+@import url('https://salva-navarro.github.io/brand-kit/brand-tokens.css');
+\\\`n
+---
 
-## Logo Assets (CDN)
+## Colores Principales
 
-```html
-<!-- Modern style (recommended) -->
-<img src="https://salva-navarro.github.io/brand-kit/01_LOGO_VARIATIONS/style_modern/logo_001.svg" />
+| Token CSS | Valor | Uso |
+|-----------|-------|-----|
+| --color-primary | #2F4F9F | PKI Blue - botones, enlaces, headings |
+| --color-secondary | #D4A017 | Heritage Gold - badges, CTAs, acentos |
+| --color-dark | #1C1C1C | Texto principal |
+| --color-light | #FFFFFF | Fondos |
 
-<!-- Classic style -->
-<img src="https://salva-navarro.github.io/brand-kit/01_LOGO_VARIATIONS/style_classic/logo_001.svg" />
+---
 
-<!-- Minimalist -->
-<img src="https://salva-navarro.github.io/brand-kit/01_LOGO_VARIATIONS/style_minimalist/logo_001.svg" />
-```
+## Tipografia
 
-## Icon Set (CDN)
+- **Heading**: Montserrat (var(--font-heading))
+- **Body**: Inter (var(--font-body))
+- **Mono**: JetBrains Mono (var(--font-mono))
 
-```html
-<!-- Certificate icon -->
-<img src="https://salva-navarro.github.io/brand-kit/05_ICON_SETS/icon_413d_certificate.svg" width="32" />
+---
 
-<!-- Shield -->
-<img src="https://salva-navarro.github.io/brand-kit/05_ICON_SETS/icon_423d_shield.svg" width="32" />
-
-<!-- Key -->
-<img src="https://salva-navarro.github.io/brand-kit/05_ICON_SETS/icon_433d_lock.svg" width="32" />
-```
-
-## Color Palette JSON (fetch)
-
-```js
-const palette = await fetch(
-  'https://salva-navarro.github.io/brand-kit/02_COLOR_PALETTES/palette_01_primary.json'
-).then(r => r.json());
-// { name: "primary", primary: "#2F4F9F", secondary: "#D4A017", dark: "#1C1C1C", light: "#FFFFFF" }
-```
-
-## Evaluation Criteria (AI Selection)
-
-```js
-const evalCriteria = await fetch(
-  'https://salva-navarro.github.io/brand-kit/07_EVALUATION_DATA/evaluation_structure.json'
-).then(r => r.json());
-// 5 criteria: Visual Hierarchy 20%, Scalability 15%, Uniqueness 25%, Tech Quality 20%, Versatility 20%
-```
-
+*Brand System v2.0 - Actualizado 2026-04-02*
