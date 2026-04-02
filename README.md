@@ -6,6 +6,18 @@ Location: Spain
 
 ---
 
+## Portfolio Context
+
+This repository is the architecture core of my PKI portfolio.
+
+- Website and demos: https://salva-navarro.github.io
+- Spanish architecture companion: https://github.com/salva-navarro/arquitectura-pki-empresarial
+- Tooling index: https://github.com/salva-navarro/Tools-Hub
+
+The goal is practical: move from abstract guidance to implementation-ready design decisions.
+
+---
+
 ## Executive Summary
 
 Enterprise PKI is a **trust platform**, not a certificate factory. Its mission is to provide:
